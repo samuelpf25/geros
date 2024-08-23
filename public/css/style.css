@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para a imagem no cabeçalho */
+.header-image {
+    width: 100%;
+    height: 100px; /* Altura ajustada */
+    object-fit: cover; /* Isso mantém a proporção e corta a imagem para preencher o contêiner */
+    filter: blur(5px); /* Efeito de desfoque */
+}
+
+/* Estilo para o cabeçalho */
+header {
+    width: 100%;
+    /*background-color: #333; */ /* Cor de fundo do cabeçalho */
+    padding-bottom: 10px; /* Espaçamento interno */
+    text-align: center; /* Alinhar o conteúdo ao centro */
+}
+
+#tb_gestao {
+    width: 100%;
+}
+.container-fluid {
+    width: 100%;
+}
+
+.dt-layout-row {
+    /*display: flex;
+  justify-content: space-around;*/
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* Container principal */
+.dt-layout-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa; /* Cor de fundo leve */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+/* Células individuais */
+.dt-layout-cell {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+/* Estilização da seleção de comprimento da tabela */
+.dt-length {
+    display: flex;
+    align-items: center;
+}
+
+.dt-length select.dt-input {
+    margin-right: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Estilização do campo de pesquisa */
+.dt-search {
+    display: flex;
+    align-items: center;
+    flex: 1; /* Faz com que o contêiner de pesquisa ocupe todo o espaço disponível */
+}
+
+.dt-search label {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.dt-search input.dt-input {
+    padding: 5px 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 14px;
+    flex: 1; /* Faz com que o input ocupe todo o espaço disponível dentro da div dt-search */
+}
+
+/* Estilos adicionais para ambos os elementos */
+.dt-input {
+    transition: border-color 0.2s;
+}
+
+.dt-input:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
